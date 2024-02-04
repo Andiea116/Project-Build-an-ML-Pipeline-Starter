@@ -1,13 +1,9 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
-You are working for a property management company renting rooms and properties for short periods of 
-time on various rental platforms. You need to estimate the typical price for a given property based 
-on the price of similar properties. Your company receives new data in bulk every week. The model needs 
-to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
+As part of my Udacity Nanodegree, I'll be creating a Machine Learning pipeline. This pipeline works through the steps of downloading the data, cleaning, training, and testing. In the end, this pipeline will be used weekly to estimate the typical price for Airbnb rentals in New York City.
 
-In this project you will build such a pipeline.
 
+**START WGU PROVIDED
 ## Table of contents
-
 - [Preliminary steps](#preliminary-steps)
   * [Fork the Starter Kit](#fork-the-starter-kit)
   * [Create environment](#create-environment)
@@ -18,12 +14,12 @@ In this project you will build such a pipeline.
 
 ## Preliminary steps
 ### Fork the Starter kit
-Go to [https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter)
+Go to [https://github.com/Andiea116/Project-Build-an-ML-Pipeline-Starter/tree/main](https://github.com/Andiea116/Project-Build-an-ML-Pipeline-Starter/tree/main)
 and click on `Fork` in the upper right corner. This will create a fork in your Github account, i.e., a copy of the
 repository that is under your control. Now clone the repository locally so you can start working on it:
 
 ```
-git clone https://github.com/[your github username]/Project-Build-an-ML-Pipeline-Starter.git
+git clone https://github.com/Andiea116/Project-Build-an-ML-Pipeline-Starter.git
 ```
 
 and go into the repository:
@@ -31,7 +27,7 @@ and go into the repository:
 ```
 cd Project-Build-an-ML-Pipeline-Starter
 ```
-Commit and push to the repository often while you make progress towards the solution. Remember 
+Commit and push to the repository often while you make progress toward the solution. Remember 
 to add meaningful commit messages.
 
 ### Create environment
@@ -48,15 +44,14 @@ Let's make sure we are logged in to Weights & Biases. Get your API key from W&B 
 [https://wandb.ai/authorize](https://wandb.ai/authorize) and click on the + icon (copy to clipboard), 
 then paste your key into this command:
 
-```bash
-> wandb login [your API key]
+```
+> wandb login [##API key##]
 ```
 
 You should see a message similar to:
 ```
-wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/andrea_bredesen/.netrc
 ```
-
 
 ### The configuration
 As usual, the parameters controlling the pipeline are defined in the ``config.yaml`` file defined in
@@ -145,8 +140,42 @@ If you are ok with that list, execute this command to clean them up:
 ```
 
 This will iterate over all the environments created by `mlflow` and remove them.
+**END WGU PROVIDED
+
+
+
+## Challenges encountered
+```
+> GitHub
+```
+When trying to git push, if Authentication errors occur, try this:
+Settings > Developer Settings > Personal Access Tokens.  Review this for additional details.
+https://github.com/orgs/community/discussions/29193
+
+## Access Links needed:
+GitHub
+```
+> https://github.com/Andiea116/Project-Build-an-ML-Pipeline-Starter/tree/main
+```
+
+WandB
+```
+> https://wandb.ai/abredesenteam/nyc_airbnb
+```
+
+
+
+## 1.0.0 Version
+Published 02/3/2024
+
+## 1.0.1 Version
+Updated Basic Cleaning run lines 37-38 with df[idx].copy updates.
+
+## 1.0.2 Version
+Push to ensure all versions were updated including README file.
 
 
 ## License
 
 [License](LICENSE.txt)
+
