@@ -63,5 +63,7 @@ def test_row_count(data):
     assert 15000 < data.shape[0] < 1000000
 
 def test_price_range(data, min_price, max_price):
-    results = data['price'].between(min_price, max_price)
-    assert np.sum(~results) == 0
+    """
+    Test all prices are between min & max
+    """
+    assert all(data['price'].between(min_price, max_price))
